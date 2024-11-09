@@ -43,10 +43,12 @@ In response to these challenges, there is a need for a solution that ensures sec
 
 ---
 # Why do we chose this problem statement?
+
 ### Feasibility and Scope:
 
 The insurance fraud prevention solution is more contained since it primarily involves document storage, verification, and claim process automation.
-You can demonstrate the essential components (like document verification with blockchain and smart contract-based claims processing) without needing complex integrations, as you might with cross-border payments.
+We planned to demonstrate the essential components (like document verification with blockchain and smart contract-based claims processing) without needing complex integrations, as you might with cross-border payments.
+
 ### Blockchain’s Clear Impact:
 
 For fraud prevention, blockchain’s value is easily understood: it provides an immutable record of claims and documents, which reduces the chance of fraud and tampering. This clear, straightforward application of blockchain could impress judges without requiring in-depth financial integrations.
@@ -55,8 +57,7 @@ For fraud prevention, blockchain’s value is easily understood: it provides an 
 VScode
 Hardhat
 Node js
-Ether
-Web3
+Web3 or Ether
 
 # Installation of Hardhat command:
 
