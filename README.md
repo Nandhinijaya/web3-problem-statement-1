@@ -61,7 +61,14 @@ For fraud prevention, blockchain’s value is easily understood: it provides an 
 2. Hardhat
 3. Node js
 4. Ether
+## Consensus Used:
+### 1.Proof of Stake (PoS): 
+   PoS chain like Ethereum, the underlying network is handling consensus. This simplifies the setup and reduces energy consumption, which is beneficial for a sustainable insurance application.
+### 2.Delegated Proof of Stake (DPoS):
+   DPoS can be included if your insurance project requires high speed, but typically, DPoS is less decentralized than PoS,for the future enhancements.
 
+These could be integrated in the project , When a new claim is submitted, consensus can verify and record it across all nodes, making it immutable and transparent.
+This guarantees that every participant, whether an insurer, a customer, or a regulatory authority, sees the same version of the truth.
 # BACKEND :
 
 ## Installation of Hardhat command:
@@ -330,7 +337,13 @@ export default WalletConnect;
 ```
 npm start
 ```
+# For the Future development:
+ ## Interoperable Wallets and Identity Verification:
+In insurance applications, verifying the identity of users and claims across chains can be a critical aspect. For this, consider interoperable solutions that enable user identity and data sharing: use of DIDs would be a simplifield solution,this could be integrated to the frontend.
 
+DIDs (Decentralized Identifiers): These allow identity verification across multiple chains using a unified identity.
+## Tokenization:
+Non-Fungible Tokens (NFTs): NFTs are unique tokens that represent ownership of a specific asset or data and cannot be exchanged on a one-to-one basis with other tokens. NFTs are based on standards like ERC-721 on Ethereum.Each insurance policy or claim could be tokenized as an NFT, representing a unique claim ID or policy number. By making each policy an NFT, you can track ownership, transferability, and prevent duplicate claims by ensuring each policy ID is unique.used for claim verification and also incentives for hosnesty activities,hence making it more efficient.
 
 
 
