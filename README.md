@@ -43,11 +43,11 @@ In response to these challenges, there is a need for a solution that ensures sec
 
 ---
 # Why do we chose this problem statement?
-## Feasibility and Scope:
+### Feasibility and Scope:
 
 The insurance fraud prevention solution is more contained since it primarily involves document storage, verification, and claim process automation.
 You can demonstrate the essential components (like document verification with blockchain and smart contract-based claims processing) without needing complex integrations, as you might with cross-border payments.
-## Blockchain’s Clear Impact:
+### Blockchain’s Clear Impact:
 
 For fraud prevention, blockchain’s value is easily understood: it provides an immutable record of claims and documents, which reduces the chance of fraud and tampering. This clear, straightforward application of blockchain could impress judges without requiring in-depth financial integrations.
 
@@ -111,9 +111,10 @@ contract InsuranceClaim {
 ```
 npx hardhat compile
 ```
-# Output the backend:
+# Output of the backend:
+![Screenshot 2024-11-09 075245](https://github.com/user-attachments/assets/83cc9280-924a-4a22-a798-5abe45249eda)
 
-![Screenshot 2024-11-08 205316](https://github.com/user-attachments/assets/a2df8210-8088-4d96-b371-2f6d2fb7449b)
+
 # Here we present our output of insurance blocks in a video as a drive link:
 
 https://drive.google.com/file/d/1cYw0gOEy37psQi8Zr2qEFMHQffJT5j4a/view?usp=sharing
