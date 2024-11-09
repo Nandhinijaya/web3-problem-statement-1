@@ -42,4 +42,87 @@ In response to these challenges, there is a need for a solution that ensures sec
    - A user interface integrating both modules, allowing seamless claim verification and fraud detection. 
 
 ---
+# Why do we chose this problem statement?
+## Feasibility and Scope:
+
+The insurance fraud prevention solution is more contained since it primarily involves document storage, verification, and claim process automation.
+You can demonstrate the essential components (like document verification with blockchain and smart contract-based claims processing) without needing complex integrations, as you might with cross-border payments.
+## Blockchain’s Clear Impact:
+
+For fraud prevention, blockchain’s value is easily understood: it provides an immutable record of claims and documents, which reduces the chance of fraud and tampering. This clear, straightforward application of blockchain could impress judges without requiring in-depth financial integrations.
+
+# Development Platform:
+VScode
+Hardhat
+Node js
+Ether
+Web3
+
+# Installation of Hardhat command:
+
+```
+  # Check Node.js and npm versions
+  node -v
+  npm -v
+```
+```
+  npm install --save-dev hardhat
+```
+```
+ mkdir insurance-blockchain
+ cd insurance-blockchain
+ npx hardhat
+```
+# Smart contract:
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract InsuranceClaim {
+    struct Claim {
+        address claimant;
+        string documentHash;
+        bool isVerified;
+    }
+
+    mapping(uint => Claim) public claims;
+    uint public claimCount;
+
+    // Add a new claim
+    function addClaim(string memory _documentHash) public {
+        claimCount++;
+        claims[claimCount] = Claim(msg.sender, _documentHash, false);
+    }
+
+    // Verify a claim
+    function verifyClaim(uint _claimId) public {
+        require(_claimId > 0 && _claimId <= claimCount, "Invalid claim ID");
+        claims[_claimId].isVerified = true;
+    }
+
+    // Retrieve claim details
+    function getClaim(uint _claimId) public view returns (address, string memory, bool) {
+        Claim memory claim = claims[_claimId];
+        return (claim.claimant, claim.documentHash, claim.isVerified);
+    }
+}
+```
+# Compilation:
+```
+npx hardhat compile
+```
+# Output the backend:
+
+![Screenshot 2024-11-08 205316](https://github.com/user-attachments/assets/a2df8210-8088-4d96-b371-2f6d2fb7449b)
+# Here we present our output of insurance blocks in a video as a drive link:
+
+https://drive.google.com/file/d/1cYw0gOEy37psQi8Zr2qEFMHQffJT5j4a/view?usp=sharing
+
+# Mocha Scan :
+
+![Screenshot (190)](https://github.com/user-attachments/assets/aa7a4814-756f-4b91-8741-a769c940a1aa)
+
+
+
+
 ### Note: This serves only as a reference example. Innovative ideas and unique implementation techniques are highly encouraged and warmly welcomed!
