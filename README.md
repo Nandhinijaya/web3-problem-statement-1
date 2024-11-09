@@ -345,7 +345,8 @@ DIDs (Decentralized Identifiers): These allow identity verification across multi
 ## Tokenization:
 Non-Fungible Tokens (NFTs): NFTs are unique tokens that represent ownership of a specific asset or data and cannot be exchanged on a one-to-one basis with other tokens. NFTs are based on standards like ERC-721 on Ethereum.Each insurance policy or claim could be tokenized as an NFT, representing a unique claim ID or policy number. By making each policy an NFT, you can track ownership, transferability, and prevent duplicate claims by ensuring each policy ID is unique.used for claim verification and also incentives for hosnesty activities,hence making it more efficient.
 
-
+#### Our team presentation link:
+https://docs.google.com/presentation/d/151j8uzmMGfM6OhmI2wNcWOY5tiolwtrl/edit#slide=id.p1
 
 
 
